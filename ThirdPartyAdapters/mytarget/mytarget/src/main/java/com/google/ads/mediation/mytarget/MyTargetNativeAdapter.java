@@ -30,7 +30,7 @@ import com.my.target.common.NavigationType;
 import com.my.target.common.models.ImageData;
 import com.my.target.nativeads.NativeAd;
 import com.my.target.nativeads.banners.NativePromoBanner;
-import com.my.target.nativeads.views.MediaAdView;
+import com.google.ads.mediation.mytarget.MedAdView;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -188,12 +188,12 @@ public class MyTargetNativeAdapter implements MediationNativeAdapter {
         @NonNull
         private final NativeAd nativeAd;
         @NonNull
-        private final MediaAdView mediaAdView;
+        private final MedAdView mediaAdView;
 
         MyTargetNativeContentAdMapper(@NonNull NativeAd nativeAd,
                 @NonNull Context context) {
             this.nativeAd = nativeAd;
-            this.mediaAdView = new MediaAdView(context);
+            this.mediaAdView = new MedAdView(context);
             setOverrideClickHandling(true);
             setOverrideImpressionRecording(true);
             NativePromoBanner banner = nativeAd.getBanner();
@@ -303,12 +303,12 @@ public class MyTargetNativeAdapter implements MediationNativeAdapter {
         @NonNull
         private final NativeAd nativeAd;
         @NonNull
-        private final MediaAdView mediaAdView;
+        private final MedAdView mediaAdView;
 
         MyTargetNativeUnifiedAdMapper(@NonNull NativeAd nativeAd,
                 @NonNull Context context) {
             this.nativeAd = nativeAd;
-            this.mediaAdView = new MediaAdView(context);
+            this.mediaAdView = new MedAdView(context);
             setOverrideClickHandling(true);
             setOverrideImpressionRecording(true);
             NativePromoBanner banner = nativeAd.getBanner();
@@ -385,12 +385,12 @@ public class MyTargetNativeAdapter implements MediationNativeAdapter {
         @NonNull
         private final NativeAd nativeAd;
         @NonNull
-        private final MediaAdView mediaAdView;
+        private final MedAdView mediaAdView;
 
         MyTargetNativeInstallAdMapper(@NonNull NativeAd nativeAd,
                 @NonNull Context context) {
             this.nativeAd = nativeAd;
-            this.mediaAdView = new MediaAdView(context);
+            this.mediaAdView = new MedAdView(context);
             setOverrideClickHandling(true);
             setOverrideImpressionRecording(true);
             NativePromoBanner banner = nativeAd.getBanner();
