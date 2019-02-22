@@ -22,6 +22,6 @@ public class MedAdView extends MediaAdView {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        return ((View) this).onTouchEvent(event);
+        return false;
     }
 }
